@@ -43,16 +43,16 @@ export function ProposalView({ data, isPreview = false }: { data: ProposalData, 
         className="max-w-4xl mx-auto bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] ring-1 ring-slate-100 overflow-hidden relative"
       >
         {/* Background Decorative */}
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-brand-500/10 blur-[80px] pointer-events-none no-print"></div>
+        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-blue-500/10 blur-[80px] pointer-events-none no-print"></div>
 
         {/* Top Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-8 sm:p-12 gap-6 bg-white border-b border-slate-100/60 z-10 relative">
           <motion.div variants={fadeUp} className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center shadow-lg shadow-brand-500/20 text-white font-bold text-xl">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center shadow-lg shadow-blue-500/20 text-white font-bold text-xl">
               M
             </div>
             <div className="font-display text-2xl font-extrabold text-slate-900 tracking-tight">
-              multi<span className="text-brand-600">agents</span>
+              multi<span className="text-blue-600">agents</span>
             </div>
           </motion.div>
           <motion.div variants={fadeUp} className="flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full ring-1 ring-emerald-200/50">
@@ -65,11 +65,11 @@ export function ProposalView({ data, isPreview = false }: { data: ProposalData, 
           {/* Hero Section */}
           <motion.div variants={fadeUp} className="relative overflow-hidden rounded-[2rem] bg-slate-950 p-8 sm:p-14 mb-12 shadow-2xl z-10">
             {/* Glow effects */}
-            <div className="absolute -top-32 -left-32 w-64 h-64 bg-brand-500 rounded-full mix-blend-screen filter blur-[100px] opacity-40"></div>
+            <div className="absolute -top-32 -left-32 w-64 h-64 bg-blue-500 rounded-full mix-blend-screen filter blur-[100px] opacity-40"></div>
             <div className="absolute -bottom-32 -right-32 w-64 h-64 bg-purple-500 rounded-full mix-blend-screen filter blur-[100px] opacity-30"></div>
             
             <div className="relative z-10 flex flex-col gap-6">
-              <div className="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-slate-800/50 border border-slate-700/50 text-brand-300 text-xs font-semibold uppercase tracking-widest backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-slate-800/50 border border-slate-700/50 text-blue-300 text-xs font-semibold uppercase tracking-widest backdrop-blur-md">
                 <Sparkles className="w-3.5 h-3.5" />
                 Proposta Comercial
               </div>
@@ -85,8 +85,8 @@ export function ProposalView({ data, isPreview = false }: { data: ProposalData, 
           {/* Parties Grid */}
           <motion.div variants={fadeUp} className="grid sm:grid-cols-2 gap-6 sm:gap-12 mb-16 p-8 rounded-[2rem] bg-slate-50/80 border border-slate-100">
             <div className="flex gap-4">
-              <div className="mt-1 w-12 h-12 shrink-0 rounded-full bg-brand-100 flex items-center justify-center">
-                <Building2 className="w-6 h-6 text-brand-600" />
+              <div className="mt-1 w-12 h-12 shrink-0 rounded-full bg-blue-100 flex items-center justify-center">
+                <Building2 className="w-6 h-6 text-blue-600" />
               </div>
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Cliente</div>
@@ -112,17 +112,17 @@ export function ProposalView({ data, isPreview = false }: { data: ProposalData, 
             <div className="grid lg:grid-cols-[1fr_2px_1fr] gap-10">
               <div className="flex flex-col gap-6">
                 <div className="flex items-center gap-3">
-                  <div className="p-2.5 rounded-xl bg-brand-50 border border-brand-100/50">
-                    <FileText className="w-5 h-5 text-brand-600" />
+                  <div className="p-2.5 rounded-xl bg-blue-50 border border-blue-100/50">
+                    <FileText className="w-5 h-5 text-blue-600" />
                   </div>
                   <h3 className="font-display text-xl font-bold text-slate-900">O que faremos</h3>
                 </div>
                 <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100/80 relative">
-                  <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">OBJETO</div>
+                  <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">OBJETO</div>
                   <p className="text-slate-600 leading-relaxed whitespace-pre-wrap relative z-0">{data.scope}</p>
                 </div>
                 <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100/80 relative">
-                   <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-brand-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">ESCOPO</div>
+                   <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">ESCOPO</div>
                   <p className="text-slate-600 leading-relaxed whitespace-pre-wrap relative z-0">{data.servicesDesc}</p>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export function ProposalView({ data, isPreview = false }: { data: ProposalData, 
           {/* Totals */}
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-8 justify-end items-end page-break-inside-avoid">
             <div className="w-full sm:w-[380px] bg-slate-950 rounded-[2rem] p-8 text-white shadow-2xl relative overflow-hidden">
-              <div className="absolute bottom-0 right-0 w-32 h-32 bg-brand-500 rounded-full mix-blend-screen filter blur-[50px] opacity-20 pointer-events-none"></div>
+              <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-500 rounded-full mix-blend-screen filter blur-[50px] opacity-20 pointer-events-none"></div>
               
               <div className="flex justify-between items-center py-2 text-slate-400 font-medium">
                 <span>Subtotal</span>
@@ -217,7 +217,7 @@ export function ProposalView({ data, isPreview = false }: { data: ProposalData, 
               )}
               <div className="flex justify-between items-center pt-6 mt-4 border-t border-slate-700/80">
                 <span className="font-display text-lg font-bold">Total Final</span>
-                <span className="font-display text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-purple-400">
+                <span className="font-display text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-400">
                   {fmt(total)}
                 </span>
               </div>
@@ -228,7 +228,7 @@ export function ProposalView({ data, isPreview = false }: { data: ProposalData, 
           <motion.div variants={fadeUp} className={`mt-16 text-center bg-slate-50 border border-slate-200 rounded-3xl p-10 no-print`}>
             <h3 className="font-display text-2xl font-bold text-slate-900 mb-3">Pronto para começarmos?</h3>
             <p className="text-slate-500 max-w-md mx-auto mb-8">Aceite os termos e dê o primeiro passo para transformar de vez os seus processos com Inteligência Artificial.</p>
-            <button className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-600 to-brand-800 hover:from-brand-500 hover:to-brand-700 text-white font-bold py-4 px-10 rounded-full shadow-xl shadow-brand-500/20 transition-all hover:scale-105 active:scale-95 group">
+            <button className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-500 hover:to-blue-700 text-white font-bold py-4 px-10 rounded-full shadow-xl shadow-blue-500/20 transition-all hover:scale-105 active:scale-95 group">
               Aceitar Proposta Agora
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

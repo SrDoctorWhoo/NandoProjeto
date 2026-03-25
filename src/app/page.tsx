@@ -79,7 +79,7 @@ export default function Home() {
         <div className="p-6 border-b border-slate-100 bg-white/80 backdrop-blur-md sticky top-0 z-20 flex justify-between items-center">
           <div>
             <h2 className="font-display font-bold text-slate-900 flex items-center gap-2 text-lg">
-              <span className="w-2 h-2 rounded-full bg-brand-500"></span>
+              <span className="w-2 h-2 rounded-full bg-blue-500"></span>
               Editor de Proposta
             </h2>
             <p className="text-xs text-slate-500 mt-1 font-medium tracking-wide uppercase">Preencha os dados e veja ao vivo</p>
@@ -97,15 +97,15 @@ export default function Home() {
             <div className="space-y-3">
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Nome do Cliente</label>
-                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all font-medium" type="text" value={data.clientName} onChange={e => updateField('clientName', e.target.value)} />
+                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium" type="text" value={data.clientName} onChange={e => updateField('clientName', e.target.value)} />
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Empresa</label>
-                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all font-medium" type="text" value={data.clientCompany} onChange={e => updateField('clientCompany', e.target.value)} />
+                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium" type="text" value={data.clientCompany} onChange={e => updateField('clientCompany', e.target.value)} />
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Responsável Multiagents</label>
-                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all font-medium" type="text" value={data.agentName} onChange={e => updateField('agentName', e.target.value)} />
+                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium" type="text" value={data.agentName} onChange={e => updateField('agentName', e.target.value)} />
               </div>
             </div>
           </section>
@@ -116,15 +116,15 @@ export default function Home() {
             <div className="space-y-3">
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Título</label>
-                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all font-medium" type="text" value={data.title} onChange={e => updateField('title', e.target.value)} />
+                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium" type="text" value={data.title} onChange={e => updateField('title', e.target.value)} />
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Subtítulo (Hero)</label>
-                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all font-medium resize-y min-h-[80px]" value={data.subtitle} onChange={e => updateField('subtitle', e.target.value)}></textarea>
+                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium resize-y min-h-[80px]" value={data.subtitle} onChange={e => updateField('subtitle', e.target.value)}></textarea>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Válido até</label>
-                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all font-medium" type="date" value={data.validity} onChange={e => updateField('validity', e.target.value)} />
+                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium" type="date" value={data.validity} onChange={e => updateField('validity', e.target.value)} />
               </div>
             </div>
           </section>
@@ -135,23 +135,23 @@ export default function Home() {
             <div className="space-y-4">
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Objeto da Proposta</label>
-                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all min-h-[100px]" value={data.scope} onChange={e => updateField('scope', e.target.value)}></textarea>
+                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all min-h-[100px]" value={data.scope} onChange={e => updateField('scope', e.target.value)}></textarea>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Escopo dos Serviços</label>
-                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all min-h-[100px]" value={data.servicesDesc} onChange={e => updateField('servicesDesc', e.target.value)}></textarea>
+                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all min-h-[100px]" value={data.servicesDesc} onChange={e => updateField('servicesDesc', e.target.value)}></textarea>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Condições de Pagamento</label>
-                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all min-h-[80px]" value={data.payment} onChange={e => updateField('payment', e.target.value)}></textarea>
+                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all min-h-[80px]" value={data.payment} onChange={e => updateField('payment', e.target.value)}></textarea>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Vigência e Confidencialidade</label>
-                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all min-h-[80px]" value={data.validityText} onChange={e => updateField('validityText', e.target.value)}></textarea>
+                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all min-h-[80px]" value={data.validityText} onChange={e => updateField('validityText', e.target.value)}></textarea>
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Garantia</label>
-                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all min-h-[80px]" value={data.warranty} onChange={e => updateField('warranty', e.target.value)}></textarea>
+                <textarea className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all min-h-[80px]" value={data.warranty} onChange={e => updateField('warranty', e.target.value)}></textarea>
               </div>
             </div>
           </section>
@@ -170,26 +170,26 @@ export default function Home() {
             <div className="space-y-3">
               {data.services.map((s, i) => (
                 <div key={s.id} className="grid grid-cols-[1fr_60px_80px_32px] gap-2 items-center">
-                  <input className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-brand-500 transition-all" type="text" value={s.name} onChange={e => updateService(i, 'name', e.target.value)} placeholder="Nome" />
-                  <input className="w-full px-2 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm text-center focus:outline-none focus:border-brand-500 transition-all" type="number" value={s.qty} min="1" onChange={e => updateService(i, 'qty', parseInt(e.target.value) || 1)} />
-                  <input className="w-full px-2 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm text-right focus:outline-none focus:border-brand-500 transition-all" type="number" value={s.price} min="0" onChange={e => updateService(i, 'price', parseFloat(e.target.value) || 0)} />
+                  <input className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm focus:outline-none focus:border-blue-500 transition-all" type="text" value={s.name} onChange={e => updateService(i, 'name', e.target.value)} placeholder="Nome" />
+                  <input className="w-full px-2 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm text-center focus:outline-none focus:border-blue-500 transition-all" type="number" value={s.qty} min="1" onChange={e => updateService(i, 'qty', parseInt(e.target.value) || 1)} />
+                  <input className="w-full px-2 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm text-right focus:outline-none focus:border-blue-500 transition-all" type="number" value={s.price} min="0" onChange={e => updateService(i, 'price', parseFloat(e.target.value) || 0)} />
                   <button className="w-8 h-8 flex items-center justify-center rounded-lg bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600 transition-colors" onClick={() => removeService(i)}>✕</button>
                 </div>
               ))}
             </div>
             
-            <button className="w-full py-3 mt-4 border-2 border-dashed border-slate-200 rounded-xl text-sm font-bold text-slate-500 hover:bg-slate-50 hover:text-brand-600 hover:border-brand-200 transition-all" onClick={addService}>
+            <button className="w-full py-3 mt-4 border-2 border-dashed border-slate-200 rounded-xl text-sm font-bold text-slate-500 hover:bg-slate-50 hover:text-blue-600 hover:border-blue-200 transition-all" onClick={addService}>
               + Adicionar Novo Serviço
             </button>
             
             <div className="pt-6 mt-6 border-t border-slate-100 space-y-4">
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Desconto (R$)</label>
-                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all" type="number" value={data.discount} min="0" onChange={e => updateField('discount', parseFloat(e.target.value) || 0)} />
+                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" type="number" value={data.discount} min="0" onChange={e => updateField('discount', parseFloat(e.target.value) || 0)} />
               </div>
               <div>
                 <label className="block text-xs font-bold text-slate-600 mb-1.5 ml-1">Descrição do desconto</label>
-                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-500 transition-all" type="text" value={data.discountLabel} onChange={e => updateField('discountLabel', e.target.value)} />
+                <input className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" type="text" value={data.discountLabel} onChange={e => updateField('discountLabel', e.target.value)} />
               </div>
             </div>
           </section>
@@ -199,7 +199,7 @@ export default function Home() {
           <button className="w-full py-3.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-bold tracking-wide transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2" onClick={printPdf}>
             ⬇ Baixar PDF
           </button>
-          <button className="w-full py-3.5 bg-brand-50 hover:bg-brand-100 text-brand-700 border border-brand-200 rounded-xl text-sm font-bold tracking-wide transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2" onClick={generateLink}>
+          <button className="w-full py-3.5 bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 rounded-xl text-sm font-bold tracking-wide transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-2" onClick={generateLink}>
             🔗 Gerar Link Exclusivo
           </button>
         </div>
@@ -210,7 +210,7 @@ export default function Home() {
 
       {/* Mobile Toggle Button */}
       <button 
-        className="lg:hidden fixed bottom-6 right-6 w-14 h-14 bg-brand-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-brand-500 transition-colors z-[60] no-print text-2xl"
+        className="lg:hidden fixed bottom-6 right-6 w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-blue-500 transition-colors z-[60] no-print text-2xl"
         onClick={() => setIsEditorOpen(!isEditorOpen)}
       >
         ✏️
